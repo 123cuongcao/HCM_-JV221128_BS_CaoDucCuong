@@ -32,6 +32,7 @@ public class BookManagement {
                         listBook.add(book);
                     }
                     break;
+
                 case 2:
                     System.out.println("Tất cả thông tin của sách");
                     listBook.forEach(Book::displayData);
@@ -57,9 +58,9 @@ public class BookManagement {
                     listBook.stream().filter(a-> a.getBookId() == wantIdBook).forEach(a->a.setBookStatus(!a.isBookStatus()));
                     break;
                 case 7:
+                default:
                     sc.close();
                     System.exit(0);
-                    break;
             }
         }while(choice!=7);
     }

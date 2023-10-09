@@ -6,5 +6,5 @@ public interface IBook {
     void inputData();
     void displayData();
 
-    int compareTo(Book o);
+
 }
